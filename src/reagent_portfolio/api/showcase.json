@@ -1,0 +1,55 @@
+[{
+    "name": "Shipment",
+    "abstract": "A file hosting web application",
+    "description": "A simple, responsive file hosting web application, returning a shortened URL to download the uploaded file",
+    "image": "",
+    "category": ["Web"],
+    "tags": ["React", "TypeScript", "Tailwind CSS", "Firebase"],
+    "link": "https://decompiler-shipment.web.app",
+    "source": "https://github.com/The-Decompiler/shipment"
+}, {
+    "name": "Ultraviolet",
+    "abstract": "Remotely control your computer with a mobile app",
+    "description": "Send touchpad signals and keyboard presses remotely through a TCP connection between your phone and your computer",
+    "image": "",
+    "category": ["Mobile"],
+    "tags": ["React Native", "TypeScript", "Go", "Sockets"],
+    "link": "",
+    "source": "https://github.com/The-Decompiler/ultraviolet"
+}, {
+    "name": "Neurage",
+    "abstract": "Take a picture and see what age you look like",
+    "description": "A web application that will predict your age based on the image you take",
+    "image": "",
+    "category": ["Web", "Machine Learning"],
+    "tags": ["React", "TypeScript", "Styled Components", "Python", "TensorFlow", "FastAPI"],
+    "link": "https://neurage.netlify.app",
+    "source": "https://github.com/The-Decompiler/neurage"
+}, {
+    "name": "Link Shrink",
+    "abstract": "A simple URL shortener",
+    "description": "Shortens a total of 25 links to distinct URL links",
+    "image": "",
+    "category": ["Web"],
+    "tags": ["React", "TypeScript", "Node", "MongoDB", "Tailwind CSS", "Formik"],
+    "link": "https://link-shrink.netlify.app/",
+    "source": "https://github.com/maxminoS/link-shrink"
+}, {
+    "name": "Quote Box",
+    "abstract": "Displays random quotes from an API",
+    "description": "Display a tweetable random quote fetched from an API, complete with a testing suite",
+    "image": "",
+    "category": ["Web"],
+    "tags": ["React", "TypeScript", "Jest", "Cypress", "React Testing Library", "Material UI"],
+    "link": "https://the-quote-box.netlify.app",
+    "source": "https://github.com/maxminoS/quote-box"
+}, {
+    "name": "Pure Searchbar",
+    "abstract": "A responsive search functionality built purely using HTML, CSS, and vanilla JavaScript",
+    "description": "",
+    "image": "",
+    "category": ["Web"],
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "link": "https://pure-searchbar.netlify.app",
+    "source": "https://github.com/maxminoS/pure-searchbar"
+}]
