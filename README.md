@@ -2,13 +2,9 @@
 
 A portfolio created using ClojureScript with its React wrapper: Reagent
 
-This project uses Shadow CLJS as its build tool, Reitit for routing, Garden for styling, and may later be reworked to use Re-frame.
+This project uses the Clojure CLI and Figwheel Main as its build tool, Reitit for routing, and Garden for styling.
 
 ## Development
-`yarn` - Install dependencies
+`clj -M:dev` - Start with Clojure CLI
 
-`yarn dev` - Start development
-
-`yarn release` - Build for production
-
-`yarn server` - Serve
+`M-x cider-jack-in-cljs` - Start with CIDER

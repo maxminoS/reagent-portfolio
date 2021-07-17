@@ -14,8 +14,7 @@ pom.xml.asc
 /.repl
 *.log
 /.env
-/.cache/
-/.lsp/
-/.shadow-cljs/
-/node_modules/
+/.cpcache
+/out
+/.lsp
 .DS_Store

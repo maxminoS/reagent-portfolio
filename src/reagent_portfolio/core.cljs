@@ -1,4 +1,4 @@
-(ns reagent-portfolio.core
+(ns ^:figwheel-hooks reagent-portfolio.core
   (:require
    [reagent-portfolio.state :as state]
    [reagent.dom :as d]))
@@ -43,13 +43,17 @@
    [nav-bar]
    [showcase]])
 
-(defn mount-root []
-  (d/render [home-page] (.getElementById js/document "app")))
+(defn mount []
+  (d/render [home-page] (.getElementById js/document "root")))
 
-(defn ^:export init! []
-  (mount-root))
+(defn ^:after-load re-render []
+  (mount))
 
- ;; Home || Blog || Projects || Contact || Emacs(logo)
+(defn ^:before-load unmount []
+  (d/unmount-component-at-node (.getElementById js/document "root")))
+
+(mount)
+
  ;; Showcase: https://mattfarley.ca/ (view more)
  ;; Projects: github/repos_list
 
