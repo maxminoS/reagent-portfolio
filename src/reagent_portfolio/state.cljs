@@ -6,7 +6,7 @@
                                     :name "Shipment"
                                     :abstract "A file hosting web application"
                                     :description "A simple, responsive file hosting web application, returning a shortened URL to download the uploaded file"
-                                    :image ""
+                                    :image "static/shipment-card.png"
                                     :category ["Web"]
                                     :tags ["React" "TypeScript" "Tailwind CSS" "Firebase"]
                                     :link "https://decompiler-shipment.web.app"
@@ -15,7 +15,7 @@
                                     :name "Ultraviolet"
                                     :abstract "Remotely control your computer with a mobile app"
                                     :description "Send touchpad signals and keyboard presses remotely through a TCP connection between your phone and your computer"
-                                    :image ""
+                                    :image "static/ultraviolet-card.png"
                                     :category ["Mobile"]
                                     :tags ["React Native" "TypeScript" "Go" "Sockets"]
                                     :link ""
@@ -24,7 +24,7 @@
                                     :name "Neurage"
                                     :abstract "Take a picture and see what age you look like"
                                     :description "A web application that will predict your age based on the image you take"
-                                    :image ""
+                                    :image "static/neurage-card.png"
                                     :category ["Web" "Machine Learning"]
                                     :tags ["React" "TypeScript" "Styled Components" "Python" "TensorFlow" "FastAPI"]
                                     :link "https://neurage.netlify.app"
@@ -33,7 +33,7 @@
                                     :name "Link Shrink"
                                     :abstract "A simple URL shortener"
                                     :description "Shortens a total of 25 links to distinct URL links"
-                                    :image ""
+                                    :image "static/link-shrink-card.png"
                                     :category ["Web"]
                                     :tags ["React" "TypeScript" "Node" "MongoDB" "Tailwind CSS" "Formik"]
                                     :link "https://link-shrink.netlify.app/"
@@ -42,7 +42,7 @@
                                     :name "Quote Box"
                                     :abstract "Displays random quotes from an API"
                                     :description "Display a tweetable random quote fetched from an API, complete with a testing suite"
-                                    :image ""
+                                    :image "static/quote-box-card.png"
                                     :category ["Web"]
                                     :tags ["React" "TypeScript" "Jest" "Cypress" "React Testing Library" "Material UI"]
                                     :link "https://the-quote-box.netlify.app"
@@ -51,7 +51,7 @@
                                     :name "Pure Searchbar"
                                     :abstract "A responsive search functionality built purely using HTML, CSS, and vanilla JavaScript"
                                     :description ""
-                                    :image ""
+                                    :image "static/pure-searchbar-card.png"
                                     :category ["Web"]
                                     :tags ["HTML" "CSS" "JavaScript"]
                                     :link "https://pure-searchbar.netlify.app"
