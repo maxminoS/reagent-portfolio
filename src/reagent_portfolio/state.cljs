@@ -49,7 +49,7 @@
                                     :source "https://github.com/maxminoS/quote-box"}
                        :showcase-6 {:id :showcase-6
                                     :name "Pure Searchbar"
-                                    :abstract "A responsive search functionality built purely using HTML, CSS, and vanilla JavaScript"
+                                    :abstract "Responsive searchbar built with HTML, CSS, and JavaScript"
                                     :description ""
                                     :image "static/pure-searchbar-card.png"
                                     :category ["Web"]

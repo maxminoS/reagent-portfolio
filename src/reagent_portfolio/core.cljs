@@ -10,36 +10,42 @@
    [:li [:a {:href "#projects"} "Projects"]]
    [:li [:a {:href "#contact"} "Contact"]]])
 
-(defn tag-block [tag]
-  [:h6.tag tag])
+(defn tag-item [tag]
+  [:span.tag tag])
 
 (defn showcase-card [{:keys [name abstract image tags link source]}]
-  [:li.card
-   [:img {:src image
-          :alt name}]
-   [:h3 name]
-   [:h5 abstract]
-   (for [tag tags]
-     ^{:key tag} [tag-block tag])
-   [:a {:href link} "Live"]
-   [:a {:href source} "Source"]])
+  [:div.card
+   [:div.card-overlay
+    [:div.card-caption
+     [:h3 name]
+     [:h5 abstract]
+     [:div.tag-block
+      (for [tag tags]
+        ^{:key tag}
+        [tag-item tag])]
+     [:a.icon-link {:href link :target "_blank"} [:i.fa.fa-globe]]
+     [:a.icon-link {:href source :target "_blank"} [:i.fa.fa-github]]]
+    [:div.overlay]]
+   [:div.card-image
+    [:img {:src image
+           :alt name}]]])
 
 (defn showcase []
   [:div
    [:h2 "Projects"]
-   (for [{:keys [id name abstract image tags link source]} (vals @state/showcase)]
-     [showcase-card {:key id
-                     :name name
-                     :abstract abstract
-                     :image image
-                     :tags tags
-                     :link link
-                     :source source}])
-   [:button "View more"]])
+   [:div.card-block
+    (for [{:keys [id name abstract image tags link source]} (vals @state/showcase)]
+      [showcase-card {:key id
+                      :name name
+                      :abstract abstract
+                      :image image
+                      :tags tags
+                      :link link
+                      :source source}])]
+   [:button.more-button "View more"]])
 
 (defn home-page []
   [:div
-   [:h2 "Welcome"]
    [nav-bar]
    [showcase]])
 

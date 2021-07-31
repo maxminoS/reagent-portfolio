@@ -1,34 +1,97 @@
 body {
   font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
-  padding-top: 72px;
   -webkit-font-smoothing: antialiased;
   font-size: 1.125em;
   color: #333;
-  line-height: 1.5em;
 }
 
-h1, h2, h3 {
-  color: #000;
-}
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.5em;
+.card-overlay {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  z-index: 1;
 }
 
-a {
-  text-decoration: none;
-  color: #09f;
+.overlay {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  background-color: black;
+  border-radius: 12px;
+  opacity: 0.6;
 }
 
-a:hover {
-  text-decoration: underline;
+.card-caption {
+  position: absolute;
+  padding: 15px 40px;
+  color: white;
+  z-index: 1;
+}
+
+.card-overlay:hover {
+  opacity: 1;
+}
+
+.card-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 480px;
+  height: 320px;
+  border-radius: 20px;
+  margin: 14px;
+}
+
+.card-image {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-image > img {
+  width: 480px;
+  height: 320px;
+  transition: 0.2s ease-out;
+}
+
+.card-overlay:hover + .card-image > img {
+  transform: scale(1.1);
+}
+
+.icon-link {
+  margin: 0 8px;
+  font-size: 30px;
+  color: white;
+}
+.icon-link:hover {
+  color: #333;
+}
+
+.tag-block {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.tag {
+  padding: 2px 8px 2px 8px;
+  margin: 1px;
+  border: 1px solid;
+  border-radius: 14px;
+  font-size: 0.65em;
+  /* user-select: none; */
+}
+
+.more-button {
+  /* position: absolute; */
+  padding: 10px;
+  /* right: 20px; */
 }
