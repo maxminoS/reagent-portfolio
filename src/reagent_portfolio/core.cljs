@@ -8,7 +8,7 @@
    [:div.title
     [:img {:src "static/logo.svg"}]
     [:h1 "Projects"]]
-   [:img.header-image {:src "static/header.svg"}]])
+   [:img {:src "static/header.svg"}]])
 
 (defn tag-item [tag]
   [:span.tag tag])
