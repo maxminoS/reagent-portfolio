@@ -7,4 +7,6 @@ This project uses the Clojure CLI and Figwheel Main as its build tool, Reitit fo
 ## Development
 `clj -M:dev` - Start with Clojure CLI
 
+`clj -M:prod` - Compile production build
+
 `M-x cider-jack-in-cljs` - Start with CIDER

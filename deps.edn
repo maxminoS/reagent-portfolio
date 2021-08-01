@@ -10,4 +10,7 @@
  :aliases
  {:dev {:main-opts ["-m" "figwheel.main"
                     "--build" "dev"
-                    "--repl"]}}}
+                    "--repl"]}
+
+  :prod {:main-opts ["-m" "figwheel.main"
+                     "--build-once" "prod"]}}}

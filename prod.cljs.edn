@@ -1,4 +1,3 @@
-^{:watch-dirs ["src"]
-  :css-dirs ["resources"]}
 {:main reagent-portfolio.core
+ :optimizations :advanced
  :output-to "resources/public/cljs-out/main.js"}
