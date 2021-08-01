@@ -41,7 +41,9 @@
                       :tags tags
                       :link link
                       :source source}])]
-   [:button.more-button "View more"]])
+   [:div.button-block
+    [:a.view-more {:href "https://github.com/maxminoS?tab=repositories"}
+     "VIEW MORE"]]])
 
 (defn home-page []
   [:div

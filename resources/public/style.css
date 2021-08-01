@@ -128,8 +128,24 @@ body {
   font-size: 0.65em;
 }
 
-.more-button {
-  /* position: absolute; */
-  padding: 10px;
-  /* right: 20px; */
+.button-block {
+  margin-top: 5px;
+  display: grid;
+  place-items: center;
+}
+
+.view-more {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  text-decoration: none;
+  color: white;
+  transition: 0.15s ease-out;
+}
+
+.view-more:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.5;
 }
