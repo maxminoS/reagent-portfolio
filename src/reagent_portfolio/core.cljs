@@ -3,12 +3,12 @@
    [reagent-portfolio.state :as state]
    [reagent.dom :as d]))
 
-(defn nav-bar []
-  [:ul
-   [:li [:a {:href "#home"} "Home"]]
-   [:li [:a {:href "#blog" :style {:pointer-events "none" :color "red"}} "Blog"]] ; disabled
-   [:li [:a {:href "#projects"} "Projects"]]
-   [:li [:a {:href "#contact"} "Contact"]]])
+(defn header []
+  [:div.header
+   [:div.title
+    [:img {:src "static/logo.svg"}]
+    [:h1 "Projects"]]
+   [:img.header-image {:src "static/header.svg"}]])
 
 (defn tag-item [tag]
   [:span.tag tag])
@@ -32,7 +32,6 @@
 
 (defn showcase []
   [:div
-   [:h2 "Projects"]
    [:div.card-block
     (for [{:keys [id name abstract image tags link source]} (vals @state/showcase)]
       [showcase-card {:key id
@@ -46,7 +45,7 @@
 
 (defn home-page []
   [:div
-   [nav-bar]
+   [header]
    [showcase]])
 
 (defn mount []

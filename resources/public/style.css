@@ -1,8 +1,47 @@
+* {
+  margin: auto;
+}
+
+html {
+  background-color: #181A1C;
+}
+
 body {
   font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 1.125em;
-  color: #333;
+}
+
+.header > .title {
+  position: absolute;
+  top: 4%;
+  left: 7%;
+  color: white;
+  transition: 0.2s ease-out;
+}
+
+.title > h1 {
+  float: right;
+  font-size: 58px;
+  margin-left: 20px;
+  user-select: none;
+}
+
+.title > img {
+  float: left;
+  margin-top: 8px;
+  width: 58px;
+  height: 58px;
+}
+
+.header >.title:hover {
+  opacity: 0.6;
+}
+
+.header > img {
+  margin: 0;
+  padding: 0;
+  margin-bottom: -215px;
 }
 
 .card-overlay {
@@ -87,7 +126,6 @@ body {
   border: 1px solid;
   border-radius: 14px;
   font-size: 0.65em;
-  /* user-select: none; */
 }
 
 .more-button {
