@@ -60,8 +60,3 @@
   (d/unmount-component-at-node (.getElementById js/document "root")))
 
 (mount)
-
- ;; Showcase: https://mattfarley.ca/ (view more)
- ;; Projects: github/repos_list
-
- ;; README: https://github.com/rcaferati/rcaferati
