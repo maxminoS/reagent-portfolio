@@ -23,8 +23,11 @@
       (for [tag tags]
         ^{:key tag}
         [tag-item tag])]
-     [:a.icon-link {:href link :target "_blank"} [:i.fa.fa-globe]]
-     [:a.icon-link {:href source :target "_blank"} [:i.fa.fa-github]]]
+     [:div.icons
+      (when (seq link)
+        [:a.icon-link {:href link :target "_blank"} [:i.fa.fa-globe]])
+      (when (seq source)
+        [:a.icon-link {:href source :target "_blank"} [:i.fa.fa-github]])]]
     [:div.overlay]]
    [:div.card-image
     [:img {:src image

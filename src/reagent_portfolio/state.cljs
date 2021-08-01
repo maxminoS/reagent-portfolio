@@ -26,7 +26,7 @@
                                     :description "A web application that will predict your age based on the image you take"
                                     :image "static/neurage-card.png"
                                     :category ["Web" "Machine Learning"]
-                                    :tags ["React" "TypeScript" "Styled Components" "Python" "TensorFlow" "FastAPI"]
+                                    :tags ["React" "TypeScript" "Styled Components" "Python" "FastAPI"]
                                     :link "https://neurage.netlify.app"
                                     :source "https://github.com/The-Decompiler/neurage"}
                        :showcase-4 {:id :showcase-4
@@ -44,12 +44,12 @@
                                     :description "Display a tweetable random quote fetched from an API, complete with a testing suite"
                                     :image "static/quote-box-card.png"
                                     :category ["Web"]
-                                    :tags ["React" "TypeScript" "Jest" "Cypress" "React Testing Library" "Material UI"]
+                                    :tags ["React" "TypeScript" "Jest" "Cypress" "React Testing" "Material UI"]
                                     :link "https://the-quote-box.netlify.app"
                                     :source "https://github.com/maxminoS/quote-box"}
                        :showcase-6 {:id :showcase-6
                                     :name "Pure Searchbar"
-                                    :abstract "Responsive searchbar built with HTML, CSS, and JavaScript"
+                                    :abstract "Searchbar for countries and cities"
                                     :description ""
                                     :image "static/pure-searchbar-card.png"
                                     :category ["Web"]
