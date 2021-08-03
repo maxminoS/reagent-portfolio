@@ -19,3 +19,4 @@ pom.xml.asc
 /.lsp
 .DS_Store
 cljs-out
+*.css.map

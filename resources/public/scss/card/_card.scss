@@ -1,0 +1,67 @@
+@import "caption";
+
+@mixin card($width) {
+  @include ratio-size($width, $card-width-ratio, $card-height-ratio);
+
+  .card-overlay {
+    @include ratio-size($width, $card-width-ratio, $card-height-ratio);
+    .card-caption { @include ratio-size($width, $card-width-ratio, $card-height-ratio); }
+    .overlay { @include ratio-size($width, $card-width-ratio, $card-height-ratio); }
+  }
+
+  .card-image {
+    @include ratio-size($width, $card-width-ratio, $card-height-ratio);
+    img { @include ratio-size($width, $card-width-ratio, $card-height-ratio); }
+  }
+}
+
+.card-block {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  @include card(270px);
+  @include media(sm) { @include card(350px); }
+  @include media(md) { @include card(480px); }
+
+  margin: 5px 0;
+  @include media(sm) { margin: 14px; }
+  border-radius: 20px;
+
+  .card-overlay {
+    position: absolute;
+    border-radius: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    z-index: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover + .card-image > img {
+      transform: scale(1.1);
+    }
+
+    .card-caption { @extend %caption; }
+
+    .overlay {
+      position: absolute;
+      background-color: black;
+      border-radius: 12px;
+      opacity: 0.6;
+    }
+  }
+
+  .card-image {
+    position: absolute;
+    border-radius: 12px;
+    overflow: hidden;
+
+    img {
+      transition: 0.2s ease-out;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use "sass:math";
+
+@mixin title-size($size) {
+  img {
+    @include ratio-size($size, 1px, 1px);
+    margin-top: math.div($size, 3);
+  }
+
+  h1 {
+    font-size: math.div($size * 4px, 3px);
+    margin-left: math.div($size, 4);
+  }
+}
+
+.header {
+  .title {
+    @include title-size(18px);
+    @include media(sm) { @include title-size(25px); }
+    @include media(md) { @include title-size(45px); }
+
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    transition: 0.2s ease-out;
+
+    @include media(xl) {
+      left: 7%;
+      transform: translateX(0);
+    }
+
+    &:hover { opacity: 0.6; }
+
+    img { float: left; }
+
+    h1 {
+      float: right;
+      user-select: none;
+    }
+  }
+
+  img {
+    @include media(md) { margin-bottom: -8%; }
+    @include media(lg) { margin-bottom: -12%; }
+  }
+}

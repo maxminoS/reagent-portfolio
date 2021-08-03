@@ -1,0 +1,16 @@
+%icon-block {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+
+  .icon {
+    margin: 0 8px;
+    font-size: 30px;
+    color: white;
+
+    &:hover {
+      color: #333;
+    }
+  }
+}

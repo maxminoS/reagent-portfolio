@@ -23,11 +23,11 @@
       (for [tag tags]
         ^{:key tag}
         [tag-item tag])]
-     [:div.icons
+     [:div.icon-block
       (when (seq link)
-        [:a.icon-link {:href link :target "_blank"} [:i.fa.fa-globe]])
+        [:a.icon {:href link :target "_blank"} [:i.fa.fa-globe]])
       (when (seq source)
-        [:a.icon-link {:href source :target "_blank"} [:i.fa.fa-github]])]]
+        [:a.icon {:href source :target "_blank"} [:i.fa.fa-github]])]]
     [:div.overlay]]
    [:div.card-image
     [:img {:src image
@@ -44,7 +44,7 @@
                       :tags tags
                       :link link
                       :source source}])]
-   [:div.button-block
+   [:div.view-more-block
     [:a.view-more {:href "https://github.com/maxminoS?tab=repositories"}
      "View More"]]])
 

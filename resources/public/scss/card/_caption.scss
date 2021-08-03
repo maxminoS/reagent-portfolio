@@ -1,0 +1,47 @@
+@import "tag";
+@import "icon";
+
+%caption-content {
+  display: grid;
+  place-items: center;
+  transition: 0.2s ease-out;
+  user-select: none;
+  cursor: default;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+%caption {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 8% 10%;
+  color: white;
+  z-index: 1;
+
+  h3 {
+    @extend %caption-content;
+
+    font-size: 0.8em;
+    @include media(sm) { font-size: 1em; }
+    @include media(md) { font-size: 1.3em; }
+    letter-spacing: 0.03rem;
+  }
+
+  h5 {
+    @extend %caption-content;
+
+    margin-top: 10px;
+    font-size: 0.53em;
+    @include media(sm) { font-size: 0.69em; }
+    @include media(md) { font-size: 0.95em; }
+    font-weight: lighter;
+    letter-spacing: 0.03rem;
+    @include media(sm) { letter-spacing: 0.04em; }
+    @include media(md) { letter-spacing: 0.05em; }
+  }
+
+  .tag-block { @extend %tag-block; }
+  .icon-block { @extend %icon-block; }
+}

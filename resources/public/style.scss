@@ -1,0 +1,30 @@
+@use "sass:math";
+
+$sm-width: 360px;
+$md-width: 640px;
+$lg-width: 1024px;
+$xl-width: 1536px;
+
+$background-color: #181A1C;
+
+$card-width-ratio: 3px;
+$card-height-ratio: 2px;
+
+@mixin ratio-size($width, $width-ratio, $height-ratio) {
+  width: $width;
+  height: math.div($width * $height-ratio, $width-ratio);
+}
+
+@mixin media($prefix) {
+  @if $prefix == sm { @media (min-width: $sm-width) { @content; }}
+  @else if $prefix == md { @media (min-width: $md-width) { @content; }}
+  @else if $prefix == lg { @media (min-width: $lg-width) { @content; }}
+  @else if $prefix == xl { @media (min-width: $xl-width) { @content; }}
+
+  @else { @warn "Supported breakpoints: sm, md, lg, xl"; }
+}
+
+@import "scss/base";
+@import "scss/header";
+@import "scss/card/card";
+@import "scss/view-more";

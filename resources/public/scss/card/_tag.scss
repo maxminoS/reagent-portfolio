@@ -1,0 +1,25 @@
+%tag-block {
+  display: flex;
+  margin-top: 65px;
+  @include media(sm) { margin-top: 90px; }
+  @include media(md) { margin-top: 120px; }
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .tag {
+    padding: 2px 8px 2px 8px;
+    margin: 1px;
+    border: 1px solid;
+    border-radius: 14px;
+    font-size: 0.35rem;
+    @include media(sm) { font-size: 0.55em; }
+    transition: 0.2s ease-out;
+    user-select: none;
+    cursor: default;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

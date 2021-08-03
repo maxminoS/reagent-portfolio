@@ -2,7 +2,7 @@
 
 A portfolio created using ClojureScript with its React wrapper: Reagent
 
-This project uses the Clojure CLI and Figwheel Main as its build tool, Reitit for routing, and Garden for styling.
+This project uses the Clojure CLI and Figwheel Main as its build tool, Reitit for routing, and Sass for styling.
 
 ## Development
 `clj -M:dev` - Start with Clojure CLI
